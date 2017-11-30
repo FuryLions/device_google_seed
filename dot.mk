@@ -1,5 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The DotOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,13 +14,13 @@
 
 $(call inherit-product, device/google/seed/full_seed.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Dot stuff.
+$(call inherit-product, vendor/dot/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_seed
+PRODUCT_NAME := dot_seed
 PRODUCT_DEVICE := seed
 PRODUCT_BRAND := google
 PRODUCT_MODEL := General Mobile 4G
@@ -33,3 +32,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=seed \
     BUILD_FINGERPRINT=google/seed_l8150/seed:7.1.1/N4F26W/3815918:user/release-keys \
     PRIVATE_BUILD_DESC="seed_l8150-user 7.1.1 N4F26W 3815918 release-keys"
+DOT_OFFICIAL := true
